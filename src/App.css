@@ -1,0 +1,81 @@
+#root, html, body {
+  min-width: 100%;
+  min-height: auto;
+}
+
+.appBar {
+  border-radius: 0 0 13px 13px;
+}
+
+.headerMain {
+  position: relative;
+
+  margin-top: 4%;
+  text-align: center;
+}
+
+.divFlipBook {
+  position: relative;
+
+  margin-top: 8%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  text-align: center;
+
+  height: 842px;
+  width: 1186px;
+}
+
+
+
+
+.gifMoney {
+  z-index: 9;
+
+  position: absolute;
+
+  right: 47%;
+  bottom: 25%;
+}
+
+.btn-call {
+  z-index: 10;
+
+  align-items: center;
+  position: absolute;
+  top: 47%;
+  left: 39%;
+  
+  width: 50px;
+  height: 25px;
+
+  background: transparent;
+  outline: none !important;
+  border: none;
+
+  border-radius: 5px;
+
+  animation: hoverWave linear 1s 3;
+  animation-delay: 2s;
+  transition: .3s;
+}
+
+@keyframes hoverWave {
+  0% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 0 rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+  }
+
+  40% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 15px rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+  }
+
+  80% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067)
+  }
+
+  100% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0.0)
+  }
+}
