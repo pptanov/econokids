@@ -1,4 +1,3 @@
-import './normalize.css'
 import './App.css';
 
 import DemoBook from './DemoBook';
