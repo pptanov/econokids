@@ -58,6 +58,21 @@ html {
 */
 
 
+@font-face {
+  font-family: "Century Gothic";
+  /* src: local("Century Gothic"); */
+  /* font-weight: normal; */
+  src: url(../src/assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+  font-family: "VAG World";
+  /* src: local("VAG World"); */
+  /* font-weight: normal; */
+
+  src: url(../src/assets/fonts/VAGWorld.ttf);
+}
+
 
 h1, h2, h3, h4 {
   font-family: "VAG World", bold;
@@ -65,19 +80,6 @@ h1, h2, h3, h4 {
 
 a, p {
   font-family: "Century Gothic";
-}
-
-
-@font-face {
-  font-family: "Century Gothic";
-  src: local("Century Gothic");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "VAG World";
-  src: local("VAG World");
-  font-weight: normal;
 }
 
 
