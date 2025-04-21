@@ -2,6 +2,12 @@ import './App.css';
 
 import DemoBook from './DemoBook';
 
+import logo from "/logo.png";
+import question from "/question.png";
+import vera1 from "/vera1.png";
+import vera2 from "/vera2.png";
+
+
 ////////////////////////////////////////////////////////////////////  
 
 
@@ -13,17 +19,11 @@ export default function App() {
         <button className="appBar__logoButton">
           <img src="../src/assets/logo.png" className='appBar__logo'/>
         </button>
-
-        <section className='appBar__toolbox'>
-          <button className='appBar__mainButton'>
-            <a href="#reader">Читалка</a>
-          </button>
-        </section>
       </header> */}
 
       <header className="navbar">
         <div className="logo">
-          <img src="../src/assets/logo.png" height={85} alt="Logo"/>
+          <img src={logo} height={85} alt="Logo"/>
         </div>
         <nav className="nav-links">
           <a href="#hero">Обучение</a>
@@ -49,14 +49,14 @@ export default function App() {
               </div> */}
             </div>
             <div className="hero-image">
-              <img src="../src/assets/question.png" height={400} alt="App UI"/>
+              <img src={question} height={400} alt="App UI"/>
             </div>
           </div>
         </section>
 
         <section className="section" id="section">
         <div className="section-image">
-            <img src="../src/assets/vera1.png" width={400} alt="Numbers UI"/>
+            <img src={vera1} width={400} alt="Numbers UI"/>
           </div>
           <div className="section-text">
             <h2>Что это?
@@ -71,7 +71,7 @@ export default function App() {
 
         <section className="section reverse" id="section reverse">
           <div className="section-image2">
-            <img src="../src/assets/vera2.png" width={600} alt="Letters UI"/>
+            <img src={vera2} width={600} alt="Letters UI"/>
           </div>
           <div className="section-text">
             <h2>Для кого?</h2>
@@ -93,7 +93,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-content">
             <div className="footer-left">
-                <img src="../src/assets/logo.png" height={150} alt="EconoKids Logo" className="footer-logo"/>
+                <img src={logo} height={150} alt="EconoKids Logo" className="footer-logo"/>
                 <p className="contact">econokids@gmail.com</p>
             </div>
 
