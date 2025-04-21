@@ -26,14 +26,17 @@ export default function App() {
           <img src="../src/assets/logo.png" height={85} alt="Logo"/>
         </div>
         <nav className="nav-links">
+          <a href="#hero">Обучение</a>
+          <a href="#section">Что это?</a>
+          <a href="#section reverse">Для кого?</a>
           <button className="signup-btn">
             <a href="#reader">Читалка</a>
-            </button>
+          </button>
         </nav>
       </header>
 
       <main className='main'>
-        <section className="hero">
+        <section className="hero" id="hero">
           <div className="hero-content">
             <div className="hero-text">
               <h1>Обучение может быть простым и веселым</h1>
@@ -51,7 +54,10 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section className="section" id="section">
+        <div className="section-image">
+            <img src="../src/assets/vera1.png" width={400} alt="Numbers UI"/>
+          </div>
           <div className="section-text">
             <h2>Что это?
             </h2>
@@ -61,13 +67,10 @@ export default function App() {
             </p>
             {/* <button className="learn-more">Learn More</button> */}
           </div>
-          <div className="section-image">
-            <img src="../src/assets/vera1.png" width={400} alt="Numbers UI"/>
-          </div>
         </section>
 
-        <section className="section reverse">
-          <div className="section-image">
+        <section className="section reverse" id="section reverse">
+          <div className="section-image2">
             <img src="../src/assets/vera2.png" width={600} alt="Letters UI"/>
           </div>
           <div className="section-text">
@@ -82,7 +85,10 @@ export default function App() {
       </main>
 
       <p className='visually-hidden' id="reader"></p>
-      <DemoBook/>
+
+      <section>
+        <DemoBook/>
+      </section>
 
       <footer className="footer">
         <div className="footer-content">
@@ -94,33 +100,20 @@ export default function App() {
             <div className="footer-middle">
                 <h3 className="footer-heading"><b>Home</b></h3>
                 <ul>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Certification</a></li>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">User Group</a></li>
+                    <li><a href="#hero">Обучение</a></li>
+                    <li><a href="#section">Что это?</a></li>
+                    <li><a href="#section reverse">Для кого?</a></li>
+                    <li><a href="#reader">Читалка</a></li>
                 </ul>
             </div>
 
-            <div className="footer-right">
-                <h3 className="footer-heading"><b>Pages</b></h3>
-                <ul>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Communities</a></li>
-                    <li><a href="#">Webinars</a></li>
-                    <li><a href="#">Videos</a></li>
-                </ul>
 
-            </div>
         </div>
 
         <div className="footer-bottom">
-            <p>2025 EconoKids. All Rights Reserved.</p>
+            <p>2025 EconoKids. All Rights Reserved</p>
             <div className="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Team</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Вверх</a>
             </div>
         </div>
     </footer>

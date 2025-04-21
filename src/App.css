@@ -1,14 +1,4 @@
-/* @font-face {
-  font-family: "Compotes Apple";
-  src: local("Compotes Apple");
-  font-weight: normal;
-}
-
-
-button {
-  background-color: transparent;
-  outline: 0 !important;
-}
+/*
 
 a, a:hover {
   color: #b76e79;
@@ -16,31 +6,8 @@ a, a:hover {
 }
 
 html {
-  scroll-behavior: smooth;
-}
-
-
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-#root, body {
-  font-family: 'Compotes Apple';
-  color: #b76e79;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-}
-
-.appBar {
-  border-radius: 0 0 13px 13px;
-}
-
-html {
   scroll-snap-type: y mandatory;
 }
-
 
 .header {
   scroll-snap-align: start;
@@ -61,13 +28,6 @@ html {
   align-items: left;
 }
 
-.appBar__toolbox {
-  width: 100%;
-  min-width: 70%;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .appBar__mainButton {
   color: black;
   font-size: 2.5rem;
@@ -78,24 +38,6 @@ html {
   margin: auto;
   width: 50%;
   height: auto;
-}
-
-
-.main {
-  height: auto;
-  background: url("src/assets/wave-haikei.svg") left top, url("src/assets/wave-haikei2.svg") right bottom;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.headerMain {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.headerMain__text {
-  font-size: 6.5rem;
-  margin-top: 2.5rem;
 }
 
 .descriptionMain__text {
@@ -113,58 +55,59 @@ html {
   margin-top: 5rem;
 }
 
-.divFlipBook {
-  scroll-snap-align: start;
-  position: relative;
+*/
 
-  margin-top: 2%;
+
+
+h1, h2, h3, h4 {
+  font-family: "VAG World", bold;
+}
+
+a, p {
+  font-family: "Century Gothic";
+}
+
+
+@font-face {
+  font-family: "Century Gothic";
+  src: local("Century Gothic");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "VAG World";
+  src: local("VAG World");
+  font-weight: normal;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 40px;
   margin-left: auto;
   margin-right: auto;
-
-  text-align: center;
-
-  height: 842px;
-  width: 1186px;
-
+  width: 80vw;
+  border-radius: 50px;
 }
 
-.footer {
-  scroll-snap-align: start;
-  
-  background-color: #B76E79;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10rem;
-  font-size: 1.7rem;
-  color: rgb(255,255,204);
+::-webkit-scrollbar {
+  width: 0;
 }
 
-ul {
-  text-align: center;
-  display: flex;
-  padding-inline: 5rem;
-  width: 20rem;
+#root, body {
+  scroll-behavior: smooth;
+
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
 }
 
-li {
-  margin: auto;
-  justify-content: center;
-  list-style-type: none;
-}
-
-
-
-
-.gifMoney {
-  z-index: 9;
-
-  position: absolute;
-
-  right: 47%;
-  bottom: 25%;
+button {
+  outline: 0 !important;
+  color: white;
 }
 
 .btn-call {
@@ -207,65 +150,35 @@ li {
   }
 }
 
+.gifMoney {
+  z-index: 9;
 
+  position: absolute;
 
-
- */
-
-h1, h2, h3, h4 {
-  font-family: "VAG World", bold;
+  right: 47%;
+  bottom: 25%;
 }
 
-a, p {
-  font-family: "Century Gothic";
-}
+.divFlipBook {
+  /* scroll-snap-align: start; */
+  position: relative;
 
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: auto;
 
-@font-face {
-  font-family: "Century Gothic";
-  src: local("Century Gothic");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "VAG World";
-  src: local("VAG World");
-  font-weight: normal;
+  height: 842px;
+  width: 1186px;
 }
 
 
- html {
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-#root, body {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-}
-
-button {
-  outline: 0 !important;
-}
-
-body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  background-color: #ffffff;
-  color: #333;
-}
-
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -284,8 +197,11 @@ body {
 }
 
 .nav-links a {
+  font-family: "VAG WORLD";
   text-decoration: none;
   color: #333;
+  margin-left: 10px;
+  margin-right: 10px;
   font-weight: 600;
 }
 
@@ -299,10 +215,8 @@ body {
   cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
   background-color: #fff7ed;
-  padding: 60px 40px;
 }
 
 .hero-content {
@@ -358,14 +272,16 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Content Sections */
 .section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 60px 40px;
   max-width: 1200px;
   margin: auto;
+}
+
+.section.reverse {
+  background-color: #fff7ed;
 }
 
 @media (min-width: 768px) {
@@ -406,18 +322,17 @@ body {
 }
 
 .section-image img {
-  max-width: 100%;
+  float: left;
+  max-width: 80%;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 14px;
-  color: #999;
-  background-color: #fafafa;
+.section-image2 img {
+  float: right;
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 
@@ -431,19 +346,27 @@ body {
 
 
 
-/* Global styles */
+
+
+
+
 body {
+  color: #333;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
-/* Footer Styling */
 .footer {
-  background-color: #fff;
+  width: 80vw;
+  margin: auto;
   padding: 50px 20px;
   color: #333;
+
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  border-radius: 50px;
 }
 
 .footer-content {
@@ -459,7 +382,7 @@ body {
 }
 
 .footer-logo {
-  width: 150px;
+  width: 300px;
   margin-bottom: 15px;
 }
 
@@ -494,7 +417,6 @@ ul li a:hover {
 }
 
 
-/* Social Media Links */
 .social-links {
   margin-top: 10px;
 }
@@ -517,10 +439,8 @@ ul li a:hover {
   color: #fff;
 }
 
-/* Footer Bottom Styling */
 .footer-bottom {
   text-align: center;
-  border-top: 1px solid #ccc;
   padding-top: 15px;
   margin-top: 20px;
 }
